@@ -1,0 +1,119 @@
+/* MAIN SECTION */
+.content{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 280px 0.95fr;
+}
+
+.dashboard{
+    padding-block-start: var(--margin-4);
+    min-width: 925px;
+}
+
+.dashboard-header{
+    margin-block-end: var(--margin-6);
+}
+
+.title{
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    color: var(--coal);
+}
+
+.desc{
+    color: var(--gray-medium);
+    font-size: var(--fs-5);
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-block-end: 0;
+}
+
+.first-container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 22px;
+}
+
+.second-container{
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    gap: 22px;
+}
+
+.trending-icon{
+    padding: 8px;
+    margin-bottom: var(--margin-5);
+    border-radius: var(--border-3);
+}
+
+.--trending-up{
+    color: green;
+}
+
+.--trending-down{
+    color: red;
+}
+
+span.more-icon{
+    font-size: 20px;
+}
+
+/* TABLE */
+.table{
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.table::-webkit-scrollbar{
+	width: 4px;
+}
+
+.table::-webkit-scrollbar-thumb{
+	background-color: var(--gray);
+}
+
+.columns-list, .product-list{
+    display: grid;
+    grid-template-columns: 1fr 135px 1fr 1fr;
+    gap: var(--margin-3);
+}
+
+.columns-list{
+    padding-block: var(--margin-5);
+    border-top: 1px solid rgba(153, 153, 153, 0.2);
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+.columns-list > h3{
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    color: var(--gray-medium);
+    text-align: center;
+}
+
+.product-list{
+    position: relative;
+    margin-block: var(--margin-5);
+    padding-block: var(--margin-5);
+}
+
+.product-list::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: 100%;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+    margin-inline: auto;
+}
+
+.product-list > p{
+    text-align: center;
+    color: var(--coal);
+}

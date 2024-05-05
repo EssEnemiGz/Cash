@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/static/js/containers-loader.js"></script>
+    <!-- CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- IONIC ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- MAIN SECTION -->
+    <main class="main">
+        <article class="content">
+            <header class="header"></header>
+            <section class="dashboard">
+                <div class="dashboard-header --inline-container --inline-between">
+                    <h1 class="title">Bienvenido de vuelta, Biscen Fabian!</h1>
+                    <ion-icon name="notifications-outline" class="material-symbols-outlined --clickable"></ion-icon>
+                </div>
+                <p class="desc">Este es el panel de estadisticas. Aqui puede ver el rendimiento de su negocio.</p>
+                <section class="cards-container --section-mini-margin">
+                    <section class="first-container">
+                        <div class="--card big-card">
+                            <canvas id="myChart" style="max-width: 600px;max-height: 260px;"></canvas>
+                        </div>
+                        <div class="--two-cards-block">
+                            <div class="micro-stat --card">
+                                <div class="--header-more">
+                                    <h3 class="--sinopsis --no-stroke">Ventas mensuales</h3>
+                                    <span class="material-symbols-outlined more-icon --clickable --transparent-button">
+                                        more_vert
+                                    </span>
+                                </div>
+                                <h2 class="--medium-title --no-stroke">-4.31%</h2>
+                                <p class="--description-transparent">-0.07% por dia</p>
+                            </div>
+                            <div class="micro-stat --card">
+                                <div class="--header-more">
+                                    <h3 class="--sinopsis --no-stroke">Clientes</h3>
+                                    <span class="material-symbols-outlined more-icon --clickable --transparent-button">
+                                        more_vert
+                                    </span>
+                                </div>
+                                <h2 class="--medium-title --no-stroke">-4.31%</h2>
+                                <p class="--description-transparent">-0.07% por dia</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="second-container">
+                        <div class="--two-cards-inline">
+                            <div class="micro-stat --card">
+                                <div class="--header-more">
+                                    <h3 class="--sinopsis --no-stroke">Ventas</h3>
+                                </div>
+                                <span class="material-symbols-outlined trending-icon --trending-up">
+                                    trending_up
+                                </span>
+                                <p class="--description-transparent">Tendencia de ganancias de un +12%</p>
+                            </div>
+                            <div class="micro-stat --card">
+                                <div class="--header-more">
+                                    <h3 class="--sinopsis --no-stroke">Clientes</h3>
+                                </div>
+                                <span class="material-symbols-outlined trending-icon --trending-down">
+                                    trending_down
+                                </span>
+                                <p class="--description-transparent">Tendencias de clientes de un -5%</p>
+                            </div>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Productos notables</h3>
+                                <span class="material-symbols-outlined more-icon --clickable --transparent-button">
+                                    more_vert
+                                </span>
+                            </div>
+                            <div class="table">
+                                <!-- COLUMNS -->
+                                <div class="columns-list">
+                                    <h3 class="product-name">Producto</h3>
+                                    <h3 class="capital-entered">Aumento</h3>
+                                    <h3 class="column-category">Categoria</h3>
+                                    <h3 class="column-price">Precio</h3>
+                                </div>
+
+                                <!-- PRODUCT LIST -->
+                                <div class="product-list">
+                                    <p class="product">Arroz</p>
+                                    <p class="capital">+15%</p>
+                                    <p class="category">Alimentos</p>
+                                    <p class="price">15/libra</p>
+                                </div>
+
+                                <div class="product-list">
+                                    <p class="product">Arroz</p>
+                                    <p class="capital">+15%</p>
+                                    <p class="category">Alimentos</p>
+                                    <p class="price">15/libra</p>
+                                </div>
+
+                                <div class="product-list">
+                                    <p class="product">Arroz</p>
+                                    <p class="capital">+15%</p>
+                                    <p class="category">Alimentos</p>
+                                    <p class="price">15/libra</p>
+                                </div>
+
+                                <div class="product-list">
+                                    <p class="product">Arroz</p>
+                                    <p class="capital">+15%</p>
+                                    <p class="category">Alimentos</p>
+                                    <p class="price">15/libra</p>
+                                </div>
+
+                                <div class="product-list">
+                                    <p class="product">Arroz</p>
+                                    <p class="capital">+15%</p>
+                                    <p class="category">Alimentos</p>
+                                    <p class="price">15/libra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <!-- CUSTOM JS -->
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
