@@ -1,10 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/static/js/containers-loader.js"></script>
+    <script src="/static/js/containers-loader.js"></script>    
+    <!-- CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- IONIC ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-
+    <main class="main">
+        <article class="--content">
+            <header class="header"></header>
+            <section class="--dashboard">
+                <div class="--dashboard-header --inline-container --inline-between">
+                    <h1 class="--title">Bienvenido de vuelta, Biscen Fabian!</h1>
+                    <ion-icon name="notifications-outline" class="material-symbols-outlined --clickable"></ion-icon>
+                </div>
+                <p class="--desc">Panel principal de Cash. Desde aqui administrar, monitorear y evaluar su sistema y negocio.</p>
+                <section class="--cards-container --section-mini-margin">
+                    <section class="--two-cards-container">
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Ganancias generales del negocio</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <span class="material-symbols-outlined --icon-box --padded-icon --trending-up">
+                                trending_up
+                            </span>
+                            <p class="--description-transparent">Tendencia de ganancias de +7%, se refleja como +45,000 pesos con respecto al mes pasado.</p>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Clientes</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <span class="material-symbols-outlined --icon-box --padded-icon --trending-down">
+                                trending_down
+                            </span>
+                            <p class="--description-transparent">Tendencia de clientes de -5%, se refleja como -12 clientes con respecto al mes pasado.</p>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Entradas de inventario</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <span class="material-symbols-outlined --icon-box --padded-icon --trending-down">
+                                trending_down
+                            </span>
+                            <p class="--description-transparent">Tendencias de entradas de inventario de -4%, se reflja como -24 entradas con respecto la mes pasado.</p>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Horas facturadas</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <span class="material-symbols-outlined --icon-box --padded-icon --trending-up">
+                                trending_up
+                            </span>
+                            <p class="--description-transparent">Tendencia de horas facturadas de +2%, se refleja como +0.4 horas con respecto al mes pasado.</p>
+                        </div>
+                    </section>
+                    <section class="--three-cards-container">
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Empleados totales</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <h2 class="--medium-title --no-stroke">15</h2>
+                            <p class="--description-transparent">Empleados actuales en nomina</p>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Empleados activos</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <h2 class="--medium-title --no-stroke">11</h2>
+                            <p class="--description-transparent">Empleados en el sistema</p>
+                        </div>
+                        <div class="micro-stat --card">
+                            <div class="--header-more">
+                                <h3 class="--sinopsis --no-stroke">Empleados inactivos</h3>
+                                <span class="material-symbols-outlined --icon-box--clickable">
+                                    more_vert
+                                </span>
+                            </div>
+                            <h2 class="--medium-title --no-stroke">4</h2>
+                            <p class="--description-transparent">Empleados en paro</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
     <!-- JS -->
     <script src="/static/js/script.js"></script>
 </body>

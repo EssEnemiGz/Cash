@@ -1,7 +1,7 @@
 /* Perfil and header panel */
 .header{
     width: fit-content;
-    height: 100%;
+    min-height: 100vh;
     background-color: var(--white);
     z-index: 10;
     box-shadow: var(--shadow-2);
