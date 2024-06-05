@@ -41,78 +41,21 @@ function generarGrafica(){
             options: {
                 pointRadius: 0,
                 tension: 0.3, // Smoth lines
-                scales: {
-                    x: {
-                        grid: {
-                            drawOnChartArea: false,
-                            drawTicks: false
-                        }
-                    },
-                    y: {
-                        beginAtZero: true, // Empezar desde cero en el eje Y
+                plugins:{
+                    legend:{
+                        display: false,
                     }
-                }
-        }});
-    }
-
-    const ctx2 = document.getElementById('ganancias');
-    if (ctx2 !== null){
-        ctx2 = ctx2.getContext();
-        myChart = new Chart(ctx2, {
-            type: 'line',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Ventas por mes',
-                    data: data,
-                    backgroundColor: 'black', // Color de las barras
-                    borderColor: '#333333', // Borde de las barras
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                pointRadius: 0,
-                tension: 0.3, // Smoth lines
+                },
                 scales: {
                     x: {
                         grid: {
-                            drawOnChartArea: false,
-                            drawTicks: false
-                        }
+                            display: false
+                        },
                     },
                     y: {
-                        beginAtZero: true, // Empezar desde cero en el eje Y
-                    }
-                }
-        }});
-    }
-
-    const ctx3 = document.getElementById('horas-trabajadas')
-    if (ctx3 !== null){
-        ctx3 = ctx3.getContext();
-        myChart = new Chart(ctx3, {
-            type: 'line',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Ventas por mes',
-                    data: data,
-                    backgroundColor: 'black', // Color de las barras
-                    borderColor: '#333333', // Borde de las barras
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                pointRadius: 0,
-                tension: 0.3, // Smoth lines
-                scales: {
-                    x: {
                         grid: {
-                            drawOnChartArea: false,
-                            drawTicks: false
-                        }
-                    },
-                    y: {
+                            display: false
+                        },
                         beginAtZero: true, // Empezar desde cero en el eje Y
                     }
                 }

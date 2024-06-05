@@ -23,6 +23,7 @@
     --fs-3: 1.563rem;
     --fs-4: 1.128rem;
     --fs-5: 0.957rem;
+    --fs-6: 0.837rem;
     --fs-major: 3.759rem;
 
     /* MARGINS */
@@ -87,6 +88,13 @@ ul{
     font-size: 24px;
 }
 
+span.--big-icon{
+    font-variation-settings: 'wght' 300;
+    color: var(--eerie-black);
+    font-weight: var(--fw-400);
+    font-size: 34px;
+}
+
 /* Default clases */
 .--link{
     font-size: var(--fs-5);
@@ -129,6 +137,9 @@ ul{
 }
 
 .--card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     padding: 24px;
     border-radius: var(--border-3);
@@ -141,8 +152,32 @@ ul{
     margin-block: var(--margin-4);
 }
 
+.--element-mini-margin{
+    margin-block: var(--margin-4);
+}
+
+.--element-micro-margin{
+    margin-block: var(--margin-5);
+}
+
 .--clickable{
     cursor: pointer;
+}
+
+.--clickable-text{
+    cursor: text;
+}
+
+.--medium-word-limiter{
+    width: 46ch;
+}
+
+.--self-centered{
+    margin-inline: auto;
+}
+
+.--text-centered{
+    text-align: center;
 }
 
 .--two-cards-block{
@@ -159,11 +194,6 @@ ul{
 
 .--no-stroke{
     font-weight: var(--fw-400);
-}
-
-.--medium-title{
-    margin-block-end: 4px;
-    font-size: var(--fs-3);
 }
 
 .--description-transparent{
@@ -243,10 +273,11 @@ ul{
     font-size: var(--fs-3);
     font-weight: var(--fw-500);
     color: var(--coal);
+    margin-block-end: 4px;
 }
 
 .--desc{
-    color: var(--gray-medium);
+    color: var(--nocturnal-plum);
     font-size: var(--fs-5);
 }
 
@@ -273,7 +304,8 @@ ul{
 
 .--columns-list, .--product-list{
     display: grid;
-    grid-template-columns: 1fr 135px 1fr 1fr;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     gap: var(--margin-3);
 }
 
