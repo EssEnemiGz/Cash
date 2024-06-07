@@ -128,7 +128,7 @@ span.--big-icon{
 
 .--button-default-hover:hover{
     transition: .1s ease-in-out;
-    background-color: var(--purple);
+    background-color: var(--coal);
     cursor: pointer;
 }
 
