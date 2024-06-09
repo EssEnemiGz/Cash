@@ -11,48 +11,7 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const form = params.get('form');
 
-// Displays
-
-const registerForm = document.querySelector('.register');
-const loginForm = document.querySelector('.login');
-
-function change(){
-	registerForm.classList.toggle('show');
-	loginForm.classList.toggle('show');
-};
-
-// Visibility
-
-if (form === REGISTER_OPTION){
-	// Pass
-} else if (form === LOGIN_OPTION){
-	registerForm.classList.toggle('show');
-	loginForm.classList.toggle('show');
-};
-
-// Forms 
-
-async function options(){
-	let url, response, result, option_element, login_element;
-
-	url = `https://${document.domain}/render/centros`;
-	response = await fetch(url, { method:"GET", headers:{"Content-Type":"application/json", "Accept":"application/json", mode:"cors", credentials:"same-origin"}});
-	result = await response.json();
-
-	const node = document.getElementsByClassName("centro-list");
-	for (let cont = 0; cont<result.length; cont++){
-		option_element = document.createElement("option");
-		option_element.value = result[cont]['id_centro'];
-		option_element.innerText = result[cont]['nombre_centro'];
-		const copy = option_element.cloneNode(true)
-
-		node[0].appendChild(option_element);
-		node[1].appendChild(copy);
-	}
-}
-
-options()
-
+// Forms
 async function send(data, option){
 	let response, url, result;
 
@@ -80,7 +39,7 @@ async function send(data, option){
 };
 
 function register(){
-	let username, password, email, confirmation, id_centro;
+	let username, password, email, confirmation;
 	username = document.querySelector(".register-form .username").value 
 	password = document.querySelector(".register-form .password").value 
 	confirmation = document.querySelector(".register-form .confirm").value
@@ -104,7 +63,7 @@ function register(){
 }
 
 function login(){
-	let username, password, email, id_centro;
+	let username, password, email;
 	username = document.querySelector(".login-form .username").value 
 	password = document.querySelector(".login-form .password").value 
 	email = docuemnt.querySelector(".login-form .email").value
@@ -113,7 +72,6 @@ function login(){
 		'username':username,
 		'password':password,
 		'email':email,
-		'id_centro':id_centro
 	}
 
 	send(json, LOGIN_OPTION, username);

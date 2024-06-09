@@ -17,10 +17,6 @@ html, body{
     gap: 16px;
 }
 
-.login-main{
-    display: none;
-}
-
 /* Form Main */
 .information-container{
     display: none;
